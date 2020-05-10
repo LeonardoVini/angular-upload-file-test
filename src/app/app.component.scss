@@ -1,0 +1,69 @@
+
+.uploadfilecontainer {
+  background-image: url("../assets/file-upload.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  height: 200px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px dashed #1C8ADB;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: #9ecbec !important;
+  opacity: 0.8;
+}
+
+.files-list {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 0;
+  width: 80%;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px dashed;
+  border-radius: 12px;
+  padding: 5px;
+  
+  div.file-content {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: #1c8adb;
+      font-size: 16px;
+      margin-right: 10px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    small {
+      color: red;
+      font-weight: bold;
+    }
+  }
+}
+
+.files-list .delete-file {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.files-list .delete-file img {
+  width: 30px;
+}
+
+.not_allowed {
+  background: rgb(212, 187, 187);
+}
